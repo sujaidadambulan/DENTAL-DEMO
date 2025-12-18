@@ -1,0 +1,109 @@
+.contact-hero {
+    padding: var(--spacing-lg) 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.contact-info h2 {
+    margin-bottom: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.info-icon {
+    color: var(--col-primary);
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.info-item h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    color: var(--col-text-dark);
+}
+
+.info-item p {
+    color: var(--col-text-muted);
+    margin: 0;
+}
+
+/* Form */
+.booking-form-wrapper {
+    background: var(--col-white);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--col-surface-dark);
+}
+
+.booking-form-wrapper h3 {
+    margin-bottom: 1.5rem;
+    color: var(--col-primary-dark);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.booking-form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--col-text-main);
+    font-size: 0.95rem;
+}
+
+.booking-form input,
+.booking-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--col-surface-dark);
+    border-radius: var(--radius-sm);
+    background-color: var(--col-surface);
+    color: var(--col-text-dark);
+    font-family: var(--font-body);
+    transition: border-color var(--transition-fast);
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+    outline: none;
+    border-color: var(--col-primary);
+    background-color: var(--col-white);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.map-section {
+    padding-top: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

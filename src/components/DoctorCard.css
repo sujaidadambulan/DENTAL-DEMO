@@ -1,0 +1,52 @@
+.doctor-card {
+    background-color: var(--col-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.doctor-image-wrapper {
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.doctor-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.doctor-card:hover .doctor-image {
+    transform: scale(1.05);
+}
+
+.doctor-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.doctor-name {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: var(--col-text-dark);
+}
+
+.doctor-qual {
+    color: var(--col-primary);
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.doctor-exp {
+    color: var(--col-text-muted);
+    font-size: 0.875rem;
+}

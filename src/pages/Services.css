@@ -1,0 +1,17 @@
+/* Services styles mostly use global classes, but adding specific override if needed */
+.services .services-grid {
+    margin-top: 2rem;
+}
+
+.max-w-2xl {
+    max-width: 42rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-muted {
+    color: var(--col-text-muted);
+}

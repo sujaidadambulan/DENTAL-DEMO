@@ -1,0 +1,40 @@
+.service-card {
+    background-color: var(--col-white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    border: 1px solid var(--col-surface-dark);
+    text-align: center;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--col-primary-light);
+}
+
+.service-icon-wrapper {
+    width: 64px;
+    height: 64px;
+    background-color: var(--col-primary-light);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--col-primary);
+}
+
+.service-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--col-text-dark);
+}
+
+.service-desc {
+    font-size: 0.95rem;
+    color: var(--col-text-muted);
+    line-height: 1.6;
+}

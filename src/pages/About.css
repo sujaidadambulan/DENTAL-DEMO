@@ -1,0 +1,74 @@
+/* About Styles */
+.about-hero {
+    padding: var(--spacing-lg) 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.value-card {
+    background: var(--col-white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast);
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.value-icon {
+    color: var(--col-primary);
+    margin-bottom: 1rem;
+}
+
+.bg-primary-light {
+    background-color: var(--col-primary-light);
+}
+
+.equipment-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.tech-list {
+    margin-top: 1.5rem;
+}
+
+.tech-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    color: var(--col-text-dark);
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+
+    .about-grid,
+    .equipment-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

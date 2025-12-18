@@ -1,0 +1,240 @@
+/* Hero */
+.hero {
+    position: relative;
+    height: 90vh;
+    min-height: 600px;
+    background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b53?auto=format&fit=crop&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: var(--col-white);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.3));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 600px;
+    margin-left: 5%;
+    /* Slight offset */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    /* Big impact */
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    color: var(--col-white);
+}
+
+.hero h1 .text-primary {
+    color: var(--col-primary);
+    /* Green accent on dark overlay */
+}
+
+.hero-sub {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    color: var(--col-surface-dark);
+    max-width: 500px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Sections General */
+.section-intro {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+.bg-surface {
+    background-color: var(--col-surface);
+}
+
+.section-label {
+    color: var(--col-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.section-header {
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-sub {
+    color: var(--col-text-muted);
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+/* Intro Grid */
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.intro-text h2 {
+    margin-bottom: 1.5rem;
+}
+
+.feature-list {
+    margin: 2rem 0;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--col-text-dark);
+}
+
+.feature-icon {
+    color: var(--col-primary);
+    flex-shrink: 0;
+}
+
+.intro-image img {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-premium);
+}
+
+/* Grids */
+.services-grid,
+.doctors-grid,
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Testimonials */
+.testimonial-card {
+    background: var(--col-white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.testimonial-card .quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--col-text-main);
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-card .author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonial-card .avatar {
+    width: 48px;
+    height: 48px;
+    background-color: var(--col-primary-light);
+    color: var(--col-primary-dark);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.testimonial-card h5 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.testimonial-card span {
+    font-size: 0.875rem;
+    color: var(--col-text-muted);
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: var(--col-primary-light);
+    padding: var(--spacing-xl) 0;
+}
+
+.cta-section h2 {
+    margin-bottom: 1rem;
+    color: var(--col-primary-dark);
+}
+
+.cta-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: var(--col-text-dark);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        min-height: 80vh;
+        padding: 4rem 0;
+        /* Add padding to prevent cut-off */
+        align-items: center;
+        /* Center vertically */
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+        line-height: 1.2;
+    }
+
+    .hero-content {
+        padding: 0 1rem;
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .intro-text {
+        order: 2;
+    }
+
+    .intro-image {
+        order: 1;
+        margin-bottom: 1rem;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        text-align: center;
+        padding: 0 1.5rem;
+        /* Add padding for mobile */
+        width: 100%;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+}

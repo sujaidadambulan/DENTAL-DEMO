@@ -1,0 +1,47 @@
+:root {
+  /* Brand Colors */
+  --col-primary: #10B981; /* Emerald 500 - Trustworthy, Medical */
+  --col-primary-dark: #047857; /* Emerald 700 - Hover states */
+  --col-primary-light: #ECFDF5; /* Emerald 50 - Backgrounds */
+  
+  --col-secondary: #0F172A; /* Slate 900 - Premium Dark */
+  --col-accent: #14B8A6; /* Teal 500 - Refreshing accents */
+  
+  --col-white: #ffffff;
+  --col-bg: #FFFFFF;
+  --col-surface: #F8FAFC; /* Slate 50 */
+  --col-surface-dark: #F1F5F9; /* Slate 100 */
+  
+  /* Text Colors */
+  --col-text-main: #334155; /* Slate 700 - Softer than black */
+  --col-text-dark: #0F172A; /* Slate 900 - Headings */
+  --col-text-muted: #64748b; /* Slate 500 */
+  --col-text-light: #94a3b8; /* Slate 400 */
+
+  /* Typography */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  
+  /* Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 2rem; /* Soft, friendly corners */
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-premium: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  
+  /* Transitions */
+  --transition-fast: 200ms ease;
+  --transition-smooth: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
