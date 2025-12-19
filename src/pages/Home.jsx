@@ -10,19 +10,19 @@ export default function Home() {
             name: "Dr. Ananya Menon",
             qualification: "BDS, MDS",
             experience: "10+ years experience",
-            image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400"
+            image: "https://i.pinimg.com/736x/32/79/22/3279228da50a2fa2099ad4b09d1fe755.jpg"
         },
         {
             name: "Dr. Rahul Varma",
             qualification: "BDS",
             experience: "7 years experience",
-            image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=400"
+            image: "https://i.pinimg.com/736x/09/b7/84/09b784f0da470f9593a1654f808036b6.jpg"
         },
         {
             name: "Dr. Neha Thomas",
             qualification: "BDS, Cosmetic Dentistry",
             experience: "5 years experience",
-            image: "https://i.pinimg.com/736x/09/b7/84/09b784f0da470f9593a1654f808036b6.jpg"
+            image: "https://i.pinimg.com/736x/c9/e0/b5/c9e0b5e45aad1de8e27b25ec6ce3cd27.jpg"
         }
     ]
 
